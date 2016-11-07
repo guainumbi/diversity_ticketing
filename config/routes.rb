@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :tags
   resources :events do
     resources :applications, only: [:show, :new, :create, :destroy]
   end
