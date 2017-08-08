@@ -11,7 +11,7 @@ Rails.application.routes.draw do
 
   resources :users
 
-  resources :tags, only: [:index, :destroy]
+  resources :tags, only: [:index, :destroy, :create]
 
   get '/past_events', to: 'events#index_past', as: :past_events
   get '/admin', to: 'admin_events#index'
